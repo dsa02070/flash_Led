@@ -1,0 +1,246 @@
+body {
+    padding-top: 60px;
+}
+
+.moblie_btn {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.fix {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: skyblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    animation: gra 18s infinite;
+    z-index: 200;
+}
+
+@keyframes gra {
+    0% {
+        background: red;
+    }
+
+    20% {
+        background: orange;
+    }
+
+    40% {
+        background: yellow;
+        color: #000
+    }
+
+    60% {
+        background: green;
+        color: #fff
+    }
+
+    70% {
+        background: blue;
+        color: #fff
+    }
+
+    80% {
+        background: darkblue;
+        color: #fff
+    }
+
+    100% {
+        background: purple;
+        color: #fff
+    }
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+/* logo */
+#logo {
+    float: left;
+}
+
+#logo h1 {
+    line-height: 60px;
+}
+
+/* nav */
+nav {
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    margin-left: 50px;
+    line-height: 60px;
+}
+
+nav ul li a {
+    position: relative;
+    font-size: 1.8rem;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+    background: green;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    margin: 0 auto;
+    background: #000;
+    bottom: -6px;
+    left: 50%;
+    transition: 0.3s;
+}
+
+/* footer */
+footer {
+    padding: 30px 30px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    color: #333;
+    overflow: hidden;
+    font-size: 1.5rem;
+    border-top: 1px solid #999;
+}
+
+footer .f_logo {
+    float: left;
+    width: 24%;
+}
+
+footer .f_logo a {}
+
+footer .f_logo a img {
+    opacity: 0.8;
+}
+
+/* address */
+footer address {
+    float: left;
+    width: 50%;
+    line-height: 2;
+}
+
+footer .tel {
+    float: left;
+}
+
+footer .tel a {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width : 1230px) {
+    footer {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+
+    body,
+    html {
+        font-size: 6px;
+    }
+
+    footer {
+        font-size: 2.2rem;
+    }
+
+    nav ul li a {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    footer .f_logo {
+        float: none;
+        width: 100%;
+    }
+
+    footer address {
+        float: none;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    footer .tel {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .moblie_btn {
+        display: block;
+    }
+
+    .section_title {
+        padding-top: 60px;
+    }
+
+    footer {
+        font-size: 2.2rem;
+    }
+
+    nav ul li a {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        position: fixed;
+        background: #f1f1f1;
+        width: 300px;
+        left: -300px;
+        bottom: 0;
+        top: 60px;
+        transition: 0.3s;
+    }
+
+    nav.on {
+        left: 0;
+    }
+
+    nav ul {
+        padding-top: 10rem;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,82 @@
+main .sub {
+    overflow: hidden;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.sub .text {
+    float: left;
+    width: calc(50% - 40px);
+    padding-right: 40px;
+    padding-top: 4rem;
+}
+
+.sub .text h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sub .text p {
+    font-size: 2rem;
+}
+
+.sub img {
+    float: left;
+    width: 50%;
+}
+
+/* install section */
+.ins {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 3rem;
+}
+
+.install {
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.install .box {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 0 10px 30px;
+    padding: 20px 0;
+    max-height: 320px;
+}
+
+.install .box img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.install .box h3 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.install .box p {
+    font-size: 2rem;
+}
+
+@media screen and (max-width : 1100px) {
+    .install .box {
+        float: left;
+        width: calc(33% - 20px);
+    }
+}
+
+@media screen and (max-width : 830px) {
+    .install .box {
+        float: left;
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width : 550px) {
+    .install .box {
+        float: left;
+        width: calc(100% - 20px);
+    }
+}
