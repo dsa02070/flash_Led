@@ -11,6 +11,7 @@
 
 .section_title p {
     font-size: 2rem;
+    line-height: 1.6;
 }
 
 section.content {
@@ -52,18 +53,19 @@ section.content img {
 section.content .text {
     float: left;
     width: calc(50% - 6rem);
-    padding: 12rem 3rem;
+    padding: 6rem 3rem;
 }
 
 section.content .text h3 {
     font-size: 3.6rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    line-height: 1.4;
 }
 
 section.content .text p {
     font-size: 2.4rem;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 1230px) {
@@ -74,26 +76,14 @@ section.content .text p {
     }
 }
 
-@media screen and (max-width: 1006px) {
-
-    body,
-    html {
-        font-size: 6px;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 788px) {
     .section_title {
         padding-top: 60px;
     }
 
-    body,
-    html {
-        font-size: 6px;
-    }
 
     section.content {
-        padding: 30px;
+        /* padding: 30px; */
     }
 
     section.content img {
@@ -104,6 +94,6 @@ section.content .text p {
     section.content .text {
         float: none;
         width: 100%;
-        padding: 6rem 3rem;
+        padding: 3rem 0rem;
     }
 }
